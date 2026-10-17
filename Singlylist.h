@@ -18,5 +18,6 @@ address alokasi(infotype x);
 void dealokasi(address &P);
 void printInfo(List L);
 void insertFirst(List &L, address P);
+address findElm(List L, infotype x);
 
 #endif

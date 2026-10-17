@@ -33,3 +33,16 @@ void insertFirst(List &L, address P) {
     P->next = L.First;
     L.First = P;
 }
+
+address findElm(List L, infotype x) {
+    address P = L.First;
+
+    while (P != NULL) {
+        if (P->info == x) {
+            return P;
+        }
+        P = P->next;
+    }
+
+    return NULL;
+}
